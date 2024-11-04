@@ -9,10 +9,7 @@ app.use(express.static(__dirname));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
-var messages = [
-  { name: "Hammad", message: "Hi" },
-  { name: "Daniyal", message: "Hi" },
-];
+var messages = [];
 
 // Create Get Message service
 app.get("/messages", (req, res) => {
